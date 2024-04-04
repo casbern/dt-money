@@ -1,31 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components/SearchForm";
 import { TransactionsContainer, TransactionsTable, PriceHighLight } from "./styles";
-
-interface Transaction {
-  id: number;
-  description: string;
-  type: 'income' | 'outcome';
-  price: number;
-  category: string;
-  createdAt: string;
-}
+import { TransactionsContext } from "../../contexts/TransactionsContext";
 
 
 export function Transactions() {
-  const [ transactions, setTransactions ] = useState<Transaction[]>([])
 
-  useEffect( () => {
-    fetch('http://localhost:3333/transactions')
-      .then(response => response.json() )
-      .then(data => {
-        setTransactions(data)
-      })
-
-  }, [])
-
+  const { transactions } = useContext(TransactionsContext)
 
   return (
     <div>
