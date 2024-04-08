@@ -26,19 +26,13 @@ export function TransactionsProvider({children}: TransactionsProviderProps) {
 
   async function fetchTransactions( query?: string ) {
     const url = new URL('http://localhost:3333/transactions')
-    console.log("fui chamada - fetchTransactions")
-    console.log("Esse é o query", query)
 
     if(query) {
       url.searchParams.append('q', query)
     }
 
-    console.log("Esse é o url", url)
-
     const response = await fetch(url)
     const data = await response.json()
-
-    console.log("Esse é o data", data)
 
     setTransactions(data)
   }

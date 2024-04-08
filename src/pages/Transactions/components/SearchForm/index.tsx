@@ -30,8 +30,6 @@ export function SearchForm() {
 
     // await new Promise(resolve => setTimeout(resolve, 2000))
 
-    console.log("fui chamada - handleSearchTransactions")
-    console.log(data.query)
     await fetchTransactions(data.query)
   }
   
