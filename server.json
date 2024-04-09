@@ -47,6 +47,30 @@
       "type": "outcome",
       "createdAt": "2024-04-09T10:05:50.356Z",
       "id": 6
+    },
+    {
+      "description": "sorvete",
+      "price": 10,
+      "category": "alimentação",
+      "type": "outcome",
+      "createdAt": "2024-04-09T14:29:00.971Z",
+      "id": 7
+    },
+    {
+      "description": "pão",
+      "price": 5,
+      "category": "alimentacao",
+      "type": "outcome",
+      "createdAt": "2024-04-09T14:30:03.547Z",
+      "id": 8
+    },
+    {
+      "description": "programacao de site",
+      "price": 2000,
+      "category": "programação",
+      "type": "income",
+      "createdAt": "2024-04-09T14:30:35.858Z",
+      "id": 9
     }
   ]
 }
