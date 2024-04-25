@@ -51,7 +51,7 @@ export const Content = styled(Dialog.Content)`
       margin-top: 1.5rem;
       cursor: pointer;
 
-      &disabled {
+      &:disabled {
         opacity: 0.6;
         cursor: not-allowed;
       }
